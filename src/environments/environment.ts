@@ -1,11 +1,11 @@
 export const environment = {
   casLoginUrl: 'https://cas.emse.fr',
-  apiLoginUrl: 'http://backend_portail-etu.emse.fr.test:8080/login',
-  apiUrl: 'http://backend_portail-etu.emse.fr.test:8080/api',
+  apiLoginUrl: 'http://local-portail-ismin.emse.fr/api/login',
+  apiUrl: 'http://local-portail-ismin.emse.fr/api/api',
   apiUri: 'api',
-  apiSuffix: '/api',
-  imgUrl: 'http://backend_portail-etu.emse.fr.test:8080/img',
-  excelUrl: 'http://backend_portail-etu.emse.fr.test:8080/excel',
-  home: 'http://backend_portail-etu.emse.fr.test:8080/',
+  apiSuffix: '/api/api',
+  imgUrl: 'http://local-portail-ismin.emse.fr/api/img',
+  excelUrl: 'http://local-portail-ismin.emse.fr/api/excel',
+  home: 'http://local-portail-ismin.emse.fr/',
   production: false,
 };
