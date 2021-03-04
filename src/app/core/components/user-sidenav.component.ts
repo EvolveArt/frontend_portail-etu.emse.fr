@@ -40,6 +40,10 @@ import { UserService } from '../services/user.service';
           <mat-icon>check_circle_outline</mat-icon>
           Mes réservations
         </a>
+        <a mat-list-item (click)="closeNav()" [routerLink]="'/recharge'">
+          <mat-icon>account_balance_wallet</mat-icon>
+          Recharger mon compte
+        </a>
         <a
           mat-list-item
           (click)="closeNav()"

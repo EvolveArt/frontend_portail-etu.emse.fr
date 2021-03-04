@@ -1,0 +1,29 @@
+<!-- IMPORT SDK LYDIA -->
+<script type="text/javascript" src="LYDIASDK.js"></script>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div *ngIf="user.value">
+    {{ authenticatedUser.firstname }} {{ authenticatedUser.lastname }} {{ _user.type }}
+    {{ authenticatedUser.promo }} , solde :
+    {{ _user.balance | currency: 'EUR':'symbol':'1.2-2':'fr' }}
+  </div>
+  <p>
+    <mat-form-field class="w-100">
+      <input type="number" matInput placeholder="Montant" formControlName="amount" />
+      <mat-error *ngIf="amount.touched && amount.invalid">
+        {{ getErrorMessage(amount) }}
+      </mat-error>
+    </mat-form-field>
+  </p>
+  <p *ngIf="user.value">
+    Nouveau solde :
+    {{ _user.balance + amount.value | currency: 'EUR':'symbol':'1.2-2':'fr' }}
+  </p>
+  <mat-error *ngIf="form.invalid">{{ getErrorMessage(form) }}</mat-error>
+  <p class="loginButtons">
+    <button class="ml-2" type="submit" mat-flat-button color="accent" [disabled]="form.invalid">
+      Recharger
+    </button>
+    <mat-spinner [diameter]="150" [strokeWidth]="5" *ngIf="loading"></mat-spinner>
+  </p>
+</form>

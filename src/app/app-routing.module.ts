@@ -4,6 +4,7 @@ import { NotFoundPageComponent } from './core/components/not-found-page.componen
 import { AdminGuard } from './core/services/auth-guard.service';
 import { HomeComponent } from './core/containers/home.component';
 import { SponsorsComponent } from './core/components/sponsors/sponsors.component';
+import { UserRechargeComponent } from './core/components/user-recharge/user-recharge.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'events',
     loadChildren: './events/events.module#EventsModule',
+  },
+  {
+    path: 'recharge',
+    component: UserRechargeComponent,
   },
   { path: '**', component: NotFoundPageComponent },
 ];
