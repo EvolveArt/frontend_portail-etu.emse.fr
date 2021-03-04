@@ -27,6 +27,7 @@ import { UserSidenavComponent } from './components/user-sidenav.component';
 import { SentryErrorHandler } from './services/sentry.service';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { SponsorComponent } from './components/sponsors/sponsor/sponsor.component';
+import { UserRechargeComponent } from './components/user-recharge/user-recharge.component';
 
 export const COMPONENTS = [
   AppComponent,
@@ -43,6 +44,7 @@ export const COMPONENTS = [
   UserSidenavComponent,
   SponsorsComponent,
   SponsorComponent,
+  UserRechargeComponent
 ];
 
 export const SERVICES = [

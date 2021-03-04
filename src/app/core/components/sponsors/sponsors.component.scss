@@ -4,3 +4,12 @@
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   padding: 50px;
 }
+
+@media screen and (max-width: 800px) {
+  .wrap {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    padding: 10px;
+  }
+}

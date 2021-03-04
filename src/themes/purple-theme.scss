@@ -1,7 +1,7 @@
 @import 'palette';
 
-$purple-primary: mat-palette($app-purple, 500, 900, 200);
-$purple-accent: mat-palette($app-yellow, 500);
+$purple-primary: mat-palette($app-indigo, 500, 900, 200);
+$purple-accent: mat-palette($app-pink, 500);
 $purple-warn: mat-palette($mat-pink, 600);
 
 // Foreground palette for light themes.
