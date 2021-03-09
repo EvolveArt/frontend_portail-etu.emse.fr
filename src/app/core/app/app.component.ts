@@ -24,7 +24,7 @@ import { EventSidenavService } from '../services/event-sidenav.service';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent implements OnInit, AfterViewInit {
-  logo = '../../../../assets/logo_bde.png';
+  logo = './assets/logo_bde.png';
   year = new Date().getFullYear();
 
   authPending = true;
